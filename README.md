@@ -6,9 +6,11 @@ Flutter Setup Process :
 04. Project level Bild gradle Some Package add;
 
     classpath 'com.google.gms:google-services:4.3.15'
+
+
     kottlin version-1.8.0
 
-05. App level gradle some Package Add
+6. App level gradle some Package Add
    apply plugin: 'com.google.gms.google-services
 
    dependencies:

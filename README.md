@@ -11,9 +11,12 @@ Flutter Setup Process :
     kottlin version-1.8.0
 
 6. App level gradle some Package Add
+
+ 
    apply plugin: 'com.google.gms.google-services
 
    dependencies:
+   
    implementation(platform("com.google.firebase:firebase-bom:32.2.2"))
 
    

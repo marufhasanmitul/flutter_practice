@@ -1,16 +1,21 @@
-# flutter_practice
+Flutter Setup Process :
 
-A new Flutter project.
+01. Flutter Website App Create
+02. Android Package SetUp.
+03. Android Studio App inside Google services Add.
+04. Project level Bild gradle Some Package add;
 
-## Getting Started
+    classpath 'com.google.gms:google-services:4.3.15'
+    kottlin version-1.8.0
 
-This project is a starting point for a Flutter application.
+05. App level gradle some Package Add
+   apply plugin: 'com.google.gms.google-services
 
-A few resources to get you started if this is your first Flutter project:
+   dependencies:
+   implementation(platform("com.google.firebase:firebase-bom:32.2.2"))
+   implementation("com.google.firebase:firebase-analytics-ktx")
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    minSdkVersion 19
+    targetSdkVersion 33
+

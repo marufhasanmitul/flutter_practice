@@ -1,36 +1,33 @@
-import 'package:flutter/material.dart';
+
+
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+
+
+import 'home_page.dart';
+
+/// Let's an App that will show our basketball live score
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(const BasketBallLiveScore());
+  runApp(const crud());
 }
 
-class BasketBallLiveScore extends StatelessWidget{
-  const BasketBallLiveScore({super.key});
+class crud extends StatelessWidget {
+  const crud({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       home: HomeScreen(),
-    );
-  }
-  
-}
-
-
-class HomeScreen extends StatelessWidget{
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Basket Ball Live Score"),
-      ),
+      themeMode: ThemeMode.light,
+      theme:ThemeData(
+        inputDecorationTheme: const InputDecorationTheme(
+          border: OutlineInputBorder()
+        )
+      )
     );
   }
 }
-
 

@@ -1,6 +1,6 @@
 Firebase Setup Process :
 
-01. Flutter Website App Create
+01. Firebase Website App Create
 02. Android Package SetUp.
 03. Android Studio App inside Google services Add.
 04. Project level Bild gradle Some Package add;
